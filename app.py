@@ -16,6 +16,6 @@ app = tornado.web.Application([
 ])
 
 if __name__ == '__main__':
-    port = manager.env.get("API_PORT")
+    port = manager.env.get("API_PORT", "8080")
     server = utilities.TornadoServer(app, port)
     server.start()

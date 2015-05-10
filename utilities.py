@@ -43,11 +43,11 @@ class Env:
         else:
             self.config = None
 
-    def get(self, name):
+    def get(self, name, default=None):
         if self.config:
-            return self.config.get("DEFAULT", name)
+            return self.config.get("DEFAULT", name, fallback=default)
         else:
-            return os.environ[name]
+            return os.environ.get(name, default)
 
 class TornadoServer:
     def __init__(self, app, port):
