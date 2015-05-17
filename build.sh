@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # App name/home registry
-REGISTRY_URL=tools.private.enterprise.glympse.com:5000
+REGISTRY_URL=registry.enterprise.glympse.com
 IMAGE_NAME=tools/sync-agent
 
 # Helpers
