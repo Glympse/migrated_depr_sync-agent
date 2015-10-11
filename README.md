@@ -19,7 +19,7 @@ Sync Agent can be launched locally or on remote machine using this command:
 docker run -d \
   -p 8080:8080 \
   -e SYNC_FOLDER=/opt/host \
-  -v /Users/egorpushkin/Temp:/opt/host \
+  -v /host/folder/to/expose:/opt/host \
   --name sync-agent \
   glympse/sync-agent:latest
 ```
